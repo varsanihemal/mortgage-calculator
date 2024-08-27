@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --Lime: hsl(61, 70%, 52%);
+    --Red: hsl(4, 69%, 50%);
+    --White: hsl(0, 0%, 100%);
+    --Slate-100: hsl(202, 86%, 94%);
+    --Slate-300: hsl(203, 41%, 72%);
+    --Slate-500: hsl(200, 26%, 54%);
+    --Slate-700: hsl(200, 24%, 40%);
+    --Slate-900: hsl(202, 55%, 16%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans';
+    background-color: var(--Slate-100);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0; */
+}
+
+.container {
+    width: 1008px;
+    background-color: var(--White);
+    margin-top: 209px;
+    margin-bottom: 209px;
+    border-radius: 29px;
+    overflow: hidden;
+}
+
+.main-wrapper {
+    display: flex;
+    padding-left: 38px;
+}
+
+.left {
+    /* border: 1px solid blue; */
+    width: 48.5vw;
+    margin-bottom: 40px;
+
+}
+
+.calculator-type {
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 41px;
+}
+
+.calculator-type p {
+    margin-right: 42px;
+}
+
+#submit-form {
+    margin-top: 42px;
+}
+
+.area {
+    display: flex;
+    flex-direction: column;
+}
+
+.pound-sign {
+    left: 2px;
+    top: 14px;
+    font-size: 19px;
+    background-color: var(--Slate-100);
+    overflow: hidden;
+    color: var(--Slate-700);
+    width: 42px;
+    height: 47px;
+    padding-left: 15px;
+    padding-top: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.years {
+    right: 2px;
+    width: 80px;
+    top: 14px;
+    background-color: var(--Slate-100);
+    color: var(--Slate-700);
+    padding-left: 15px;
+    padding-top: 13px;
+    height: 47px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.percentage {
+    right: 2px;
+    width: 52px;
+    top: 14px;
+    background-color: var(--Slate-100);
+    color: var(--Slate-700);
+    padding-left: 15px;
+    padding-top: 13px;
+    height: 47px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+span {
+    position: absolute;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 26px;
+    gap: 22px;
+}
+
+.wrapper input {
+    margin-top: 12px;
+    font-family: 'Plus Jakarta Sans';
+    /* padding: 15px; */
+    padding-left: 60px;
+    font-weight: 700;
+    font-size: 15px;
+    height: 50px;
+    width: 426px;
+    border-radius: 5px;
+}
+
+#term, #rate {
+    padding-left: 20px;
+}
+
+.form-flex .wrapper input {
+    width: 202px;
+}
+
+.radios {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.radios label {
+    margin-top: 3px;
+    border: 1px solid black;
+    width: 427px;
+    height: 50px;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+.type-of-payment {
+    margin-top: 25px;
+}
+
+input[type=radio]{
+    width: 30px;
+    height: 20px;
+}
+
+.repay, .interest {
+    display: flex;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    padding: 25px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--Lime);
+    width: 313px;
+    height: 56px;
+}
+.btn p{
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 3px;
+}
+
+.right {
+    background-color: var(--Slate-900);
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border-bottom-left-radius: 80px;
+}
+
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 152px;
+
+}
+.term-error, .amount-error, .rate-error, .type-error {
+    color: red;
+}
+
+.empty h2 {
+    margin-top: 17px;
+}
+
+.empty p {
+    width: 88%;
+    text-align: center;
+    margin-top: 16px;
+    line-height: 1.5;
+    color: var(--Slate-300);
+}
+
+.completed {
+    width: 504px;
+    align-self: flex-start; 
+    text-align: left; 
+    padding: 41px;
+}
+
+
+.completed p {
+    /* width: 30%; */
+    margin-top: 16px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.result-completed-container {
+    margin-top: 39px;
+    background-color: black;
+    border-top: 4px solid var(--Lime);
+    /* padding: 20px; */
+    padding-left: 32px;
+    height: 293px;
+
+}
+
+.monthly {
+    margin-top: 28px;
+}
+
+.monthly-payment {
+    font-size: 52px;
+    letter-spacing: 2px;
+    color: var(--Lime);
+    margin-top: 11px;
+    font-weight: 700;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.repay-term{
+    margin-top: 144px;
+}
+.repay-term p, .monthly p, .completed p {
+    color: var(--Slate-500);
+    font-weight: 500;
+}
+.repay-total {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 8px
+}
+
+/* Hover */
+.wrapper input:hover {
+    border: 2px solid var(--Lime);
+    cursor: pointer;
+}
+.repay:hover, .interest:hover {
+    background-color: lightyellow;
+    border: 2px solid var(--Lime);
+    cursor: pointer;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
