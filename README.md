@@ -31,3 +31,8 @@ Double-click the index.html file or open it with your preferred web browser.
 ## Live Demo
 
 You can view the live demo of the mortgage calculator [here](https://hemal-varsani-mortgage.netlify.app/).
+
+
+## local dev
+
+1. open idex.html inn vscode
